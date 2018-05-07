@@ -14,7 +14,10 @@
 			}
 
 			body {
-				background: #0a1612;
+				/*background: #0a1612;*/
+				background-repeat: repeat;
+				background-image: url('ep_naturalblack.png');
+				background-attachment: fixed;
 			}
 
 			header, section {
@@ -45,60 +48,226 @@
 
 			h1:nth-child(2) {
 				text-align: right;
+				margin-bottom: 4rem;
 			}
 
 			h3 {
 				font: 300 1rem/125% Arial;
 				letter-spacing: -.5px;
-				color: #ccc;
+				color: #bbb;
 				width: 80%;
 				margin: 0 auto 1rem;
+			}
+
+			h3:last-child {
+				margin-bottom: 2.5rem;
+			}
+
+			h2 {
+				font: 700 2rem/100% Poppins, Arial, sans-serif;
+				color: #ddd;
+				border-bottom: 5px solid #c55360;
+				margin-top: 1rem;
 			}
 
 			section {
 				width: 1100px;
 			}
 
-			p {
-				font: 300 1.75rem Poppins;
-				color: #fff;
+			p, li {
+				font: 300 1.5rem/170% Poppins;
+				color: #ccc;
 				margin: 2rem 0;
+			}
+
+			li {
+				margin-left: 1rem;
+			}
+
+			.figure.left {
+				float: left;
+				margin-right: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			.figure.right {
+				float: right;
+				margin-left: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			.threehundredpx {
+				width: 300px;
+				height: auto;
+			}
+
+			.caption {
+				display: block;
+				font: 400 1.05rem/130% Arial, sans-serif;
+				letter-spacing: -.5px;
+				color: #aaa;
+				margin: .75rem 0;
+			}
+
+			.emphasis {
+				background: #eef5f3;
+				padding: 30px 37.5px 30px 30px;
+				margin: 2rem auto;
+				width: 95%;
+				color: #333;
+				transform: skew(-7.5deg);
+				border-left: 7.5px solid #c55360;
+				transition: .15s;
+			}
+
+			.emphasis:hover {
+				border-left: 15px solid #c55360;
+				padding-right: 24px;
+			}
+
+			li a {
+				color: #fff;
+			}
+
+			footer {
+				padding: 2rem 0;
+				text-align: center;
+			}
+
+			footer p {
+				font-size: 1.05rem;
+			}
+
+			@media (max-width: 1300px) {
+				header {
+					width: 90%;
+					margin: auto;
+				}
+
+				h1 {
+					font-size: 3.5rem;
+				}
+
+				section {
+					width: 85%;
+				}
+
+				p, li {
+					font-size: 1.35rem;
+				}
+			}
+
+			@media (max-width: 900px) {
+				.figure {
+					width: 100%;
+				}
+
+				h1 {
+					font-size: 3rem;
+					line-height: 150%;
+					margin-bottom: 1rem;
+				}
+
+				header {
+					padding: 4rem .5rem 0;
+				}
 			}
 		</style>
 	</head>
 
 	<body>
-		<header>
-			<h1>
-				Treating
-				<strong>Fragile X Syndrome</strong>
-			</h1>
-			<h1>
-				With
-				<strong>CRISPR/Cas9</strong>
-			</h1>
+		<div>
+			<header>
+				<h1>
+					Treating
+					<strong>Fragile X Syndrome</strong>
+				</h1>
+				<h1>
+					With
+					<strong>CRISPR/Cas9</strong>
+				</h1>
 
-			<br>
+				<h3>X. Shawn Liu<sup>1</sup>, Hao Wu<sup>1,3</sup>, Marine Krzisch<sup>1</sup>, Xuebing Wu<sup>1</sup>, John Graef<sup>3</sup>, Julien Muffat<sup>1</sup>, Denes Hnisz<sup>1</sup>, Charles H. Li<sup>1,2</sup>, Bingbing Yuan<sup>1</sup>, Chuanyun Xu<sup>1,4</sup>, Yun Li<sup>1</sup>, Dan Vershkov<sup>5</sup>, Angela Cacace<sup>3</sup>, Richard A. Young<sup>1,2</sup>, Rudolf Jaenisch<sup>1,2,6</sup></h3>
 
-			<h3>X. Shawn Liu<sup>1</sup>, Hao Wu<sup>1,3</sup>, Marine Krzisch<sup>1</sup>, Xuebing Wu<sup>1</sup>, John Graef<sup>3</sup>, Julien Muffat<sup>1</sup>, Denes Hnisz<sup>1</sup>, Charles H. Li<sup>1,2</sup>, Bingbing Yuan<sup>1</sup>, Chuanyun Xu<sup>1,4</sup>, Yun Li<sup>1</sup>, Dan Vershkov<sup>5</sup>, Angela Cacace<sup>3</sup>, Richard A. Young<sup>1,2</sup>, Rudolf Jaenisch<sup>1,2,6</sup></h3>
+				<h3>1. <b>Whitehead Institute for Biomedical Research</b>, Cambridge, MA 02142, USA; 2. Department of Biology, <b>Massachusetts Institute of Technology</b>, Cambridge, MA 02142, USA; 3. <b>Fulcrum Therapeutics</b>, One Kendall Square, Biney St b7102, Cambridge, MA 02139, USA; 4. Present address: Department of Biology, <b>Stanford University</b>, Stanford, CA 94305, USA; 5. <b>The Hebrew University of Jerusalem</b>, Edmond J. Safra Campus, Givat Ram, Jerusalem 91904, Israel</h3>
+			</header>
+			
+			<section>
+				<h2>What is fragile X syndrome?</h2>
 
-			<h3>1. <b>Whitehead Institute for Biomedical Research</b>, Cambridge, MA 02142, USA; 2. Department of Biology, <b>Massachusetts Institute of Technology</b>, Cambridge, MA 02142, USA; 3. <b>Fulcrum Therapeutics</b>, One Kendall Square, Biney St b7102, Cambridge, MA 02139, USA; 4. Present address: Department of Biology, <b>Stanford University</b>, Stanford, CA 94305, USA; 5. <b>The Hebrew University of Jerusalem</b>, Edmond J. Safra Campus, Givat Ram, Jerusalem 91904, Israel</h3>
-		</header>
-		
-		<section>
-			<p>Throughout the world, <b>1 in 3600 males</b> and <b>1 in 4000 females</b> suffer from <b>fragile X syndrome (FXS)</b>, an inherited developmental disorder.</p>
+				<p>Throughout the world, <b>1 in 3600 males</b> and <b>1 in 4000 females</b> suffer from <b>fragile X syndrome (FXS)</b>, an inherited developmental disorder.</p>
 
-			<p>Symptoms range from <b>intellectual disability</b> and <b>aggressive, hyperactive behavior</b> to <b>seizues</b> and <b>physical abnormalities such as a long face, large forehead and ears, and flat feet</b>.</p>
+				<p>Symptoms range from <b>intellectual disability</b> and <b>aggressive, hyperactive behavior</b> to <b>seizues</b> and <b>physical abnormalities such as a long face, large forehead and ears, and flat feet</b>.</p>
 
-			<p>FXS occurs when the <b><i>FMR1</i></b> gene, located at the end of the X chromosome, is turned off.</p>
+				<div class="figure left threehundredpx">
+					<img class="threehundredpx" src="Fragx-1.jpg" alt="By Peter Saxon [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], from Wikimedia Commons">
 
-			<p>Healthy people have up to 55 <b>repeats of “CGG”</b> at the promoter of their FMR1 gene, all of which are <b>unmethylated</b>—these nucleotides don't have methyl groups attached.</p>
+					<span class="caption">
+						A boy with fragile X syndrome. Though individuals express different symptoms, frequent characteristics include developmental delays, a prominent jaw, and elongated face.<br><br>
+						By Peter Saxon [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], from Wikimedia Commons
+					</span>
+				</div>
 
-			<p><b>Carriers</b> of the FXS premutation have about 55 to 200 unmethylated CGGs.
+				<p>FXS occurs when the <b><i>FMR1</i></b> gene, located at the end of the X chromosome, is turned off.</p>
+				
+				<p>Healthy people have up to 55 <b>repeats of “CGG”</b> at the promoter of their FMR1 gene, all of which are <b>unmethylated</b>—these nucleotides don't have methyl groups attached.</p>
+				
+				<p><b>Carriers</b> of the FXS premutation have about 55 to 200 unmethylated CGGs.</p>
+				
+				<p>People with the full mutation have over 200 methylated CGG repeats, which silences the gene (National Fragile X Foundation, 2017).</p>
 
-			<p>People with the full mutation have over 200 CGG repeats, leading to methylation of the promoter region, which silences the gene.</p>
+				<h2>What's the new idea?</h2>
 
-			<p>Recently, researchers hypothesized that they could use <b>CRISPR/Cas9, a gene editing technology</b>, to demethylate that region, reactivate FMR1, and <b>cure fragile X syndrome in mice</b>.</p>
-		</section>
+				<p>Previous evidence has suggested that it's not the presence of excess CGG repeats alone that cause FXS, but rather the methylation and subsequent silencing of FMR1 (Berman et al., 2014).</p>
+				
+				<p class="emphasis">With that in mind, researchers at the Whitehead Institute in Cambridge, MA, and their collaborators <b>hypothesized</b> that they could use <b>CRISPR/Cas9, a gene editing technology</b>, to demethylate the CGG repeats, reactivate FMR1, and <b>cure fragile X syndrome in mice models</b>.</p>
+
+				<h2>How does the cure work?</h2>
+
+				<p><b>CRISPR/Cas9</b> is a recently developed gene editing tool. It's composed of two parts: a Cas9 enzyme and a guide RNA molecule. <b>Cas9 acts as a pair of “scissors” that cuts DNA</b> at specific positions, and the <b>guide RNA</b>, as you might guess, <b>navigates the system to the part of the genome you care about</b> (Hsu, Lander, & Zhang, 2014).</p>
+
+				<div class="figure right threehundredpx">
+					<img class="threehundredpx" style="background:#fff" src="GRNA-Cas9.png" alt="By Marius Walter [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], from Wikimedia Commons">
+
+					<span class="caption">By Marius Walter [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], from Wikimedia Commons</span>
+				</div>
+
+				<p>First, the researchers created a special CRISPR/Cas9 system by attaching <b>DNA methyltransferase (Dnmt) and ten-eleven translocation (Tet) enzymes, both of which can modify methylation</b>, to Cas9. They then inserted it into induced pluripotent stem cells (iPSCs), which are somatic, or non-reproductive, cells that have been reverted back to unspecialized states (Liu et al., 2018).</p>
+
+				<p>In this case, the <b>iPSCs were derived from mouse brain cells</b>, and they were delivered to the cells through <b>lentiviruses</b> (Liu et al., 2018), which can integrate its genetic code into the genome of host species. In most cases, that's a dangerous characteristic, but in <b>gene therapy</b>, it makes these viruses useful as <b>vectors, or vehicles for genetic material</b>.</p>
+
+				<p>As a control, the experimenters used an inactivated Tet1 enzyme with the same guide RNA. The cells containing active Tet enzymes had expression levels of FMR1 restored to 90.4% of that of wild-type, or healthy, human embryonic stem cells. The control, however, showed no restoration.</p>
+
+				<p>Levels of methylation of the CGG repeats were reduced from 100% to just 4%. Another important result is that the off-target, or unexpected and unwanted, effects were minimal.</p>
+
+				<!--<h2>How did they find all that out?</h2>
+
+				<p>The special CRISPR/Cas9 systems also had fluorescent tags attached to them. Additionally, they performed a technique called Western blotting</p>
+
+				<p>Bisulfite sequencing</p>-->
+
+				<h2>What does this mean for the future?</h2>
+
+				<p class="emphasis">In conclusion, CRISPR/Cas9-based technology proved to be an <b>exceptionally successful treatment</b> for fragile X syndrome in this comprehensive experiment, <b>supporting the initial hypothesis</b>.
+
+				<p>With further studies, targeted demethylation of the FMR1 gene may eventually become a <b>viable and valuable therapeutic option</b>. For the <b>millions of FXS carriers, patients, and their families throughout the world</b>, this has the potential to <b>relieve enormous psychological and financial burdens</b>.</p>
+
+				<h2>Bibliography</h2>
+
+				<ol>
+					<li>Berman, R. F., Buijsen, R. A., Usdin, K., Pintado, E., Kooy, F., Pretto, D., . . . Hukema, R. K. (2014). Mouse models of the fragile X premutation and fragile X-associated tremor/ataxia syndrome. <i>Journal of Neurodevelopmental Disorders, 6</i>(1). doi:10.1186/1866-1955-6-25</li>
+
+					<li>Hsu, P., Lander, E., & Zhang, F. (2014). Development and Applications of CRISPR-Cas9 for Genome Engineering. <i>Cell, 157</i>(6), 1262-1278. doi:10.1016/j.cell.2014.05.010</li>
+
+					<li>Liu, X. S., Wu, H., Krzisch, M., Wu, X., Graef, J., Muffat, J., . . . Jaenisch, R. (2018). Rescue of Fragile X Syndrome Neurons by DNA Methylation Editing of the FMR1 Gene. <i>Cell, 172</i>(5). doi:10.1016/j.cell.2018.01.012</li>
+
+					<li>National Fragile X Foundation. (2017). FXS. Retrieved from <a href="http://fragilex.org/learn">fragilex.org/learn</a>.</li>
+				</ol>
+			</section>
+
+			<footer>
+				<p>Made with ❤ for the Massachusetts Society for Medical Research Student Competition 2018</p>
+			</footer>
+		</div>
 	</body>
 </html>
